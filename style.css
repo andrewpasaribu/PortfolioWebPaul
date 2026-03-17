@@ -334,8 +334,11 @@ body {
 
 /* Mengatur grid agar proyek tunggal tidak terlalu lebar tapi tetap gagah */
 .portfolio-grid {
-  display: flex;
-  justify-content: flex-start; /* Sejajar kiri sesuai gaya About & Experience */
+  display: grid;
+  grid-template-columns: 1fr; /* Ini akan memaksa 1 kolom saja sehingga berjejer ke bawah */
+  gap: 30px; /* Jarak antar kotak portofolio */
+  max-width: 1000px; /* Opsional: agar kotak tidak terlalu lebar di layar besar */
+  margin: 0 auto;
 }
 
 .project-card {
